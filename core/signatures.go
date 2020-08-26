@@ -690,9 +690,33 @@ var Signatures = []Signature{
     comment:     "Can contain credentials for NPM registries",
   },
   PatternSignature{
+    part:        PartFilename,
+    match:       regexp.MustCompile(`^\.?env$`),
+    description: "Environment configuration file",
+    comment:     "",
+  },
+  PatternSignature{
     part:        PartPath,
     match:       regexp.MustCompile(`jwt`),
     description: "Contains word: jwt",
+    comment:     "",
+  },
+  PatternSignature{
+    part:        PartPath,
+    match:       regexp.MustCompile(`JWT`),
+    description: "Contains word: JWT",
+    comment:     "",
+  },
+  PatternSignature{
+    part:        PartPath,
+    match:       regexp.MustCompile(`ApiKey`),
+    description: "Contains word: ApiKey",
+    comment:     "",
+  },
+  PatternSignature{
+    part:        PartPath,
+    match:       regexp.MustCompile(`db`),
+    description: "Contains word: db",
     comment:     "",
   },
   PatternSignature{
