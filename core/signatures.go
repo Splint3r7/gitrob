@@ -697,8 +697,8 @@ var Signatures = []Signature{
   },
   PatternSignature{
     part:        PartPath,
-    match:       regexp.MustCompile(`credential`),
-    description: "Contains word: credential",
+    match:       regexp.MustCompile(`jwt`),
+    description: "Contains word: jwt",
     comment:     "",
   },
   PatternSignature{
