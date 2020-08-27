@@ -721,6 +721,12 @@ var Signatures = []Signature{
   },
   PatternSignature{
     part:        PartPath,
+    match:       regexp.MustCompile(`_key`),
+    description: "Contains word: _key",
+    comment:     "",
+  },
+  PatternSignature{
+    part:        PartPath,
     match:       regexp.MustCompile(`password`),
     description: "Contains word: password",
     comment:     "",
