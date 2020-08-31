@@ -731,4 +731,10 @@ var Signatures = []Signature{
     description: "Contains word: password",
     comment:     "",
   },
+  PatternSignature{
+    part:        PartFilename,
+    match:       regexp.MustCompile(`^\.?js$`),
+    description: "Javascript file found",
+    comment:     "",
+  },
 }
